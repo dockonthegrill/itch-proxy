@@ -2,8 +2,8 @@
 bind = ["tcp", "localhost:1338"]
 
 [stream]
-allow_hosts = ["^.*$"]
-block_hosts = []
+allow_hosts = ["^(?:.*\\.)?google\\.com$"]
+block_hosts = [".*"]
 allow_direct_ip = false
 allow_loopback = false
 allow_udp = false
